@@ -1,4 +1,7 @@
 /*CSS FOR MOBILE S*/
+#navigation{
+    display: none;
+}
 .toggle-container {
     display: flex;
     align-items: center;
@@ -363,6 +366,12 @@ footer{
     align-items: center;
 }
 @media screen and (min-width:768px) {
+    .certificates-group{
+        grid-template-columns: 1fr 1fr;
+    }
+    .projects-grid{
+        grid-template-columns: 1fr 1fr;
+    }
     #myChart-pie{
         display: none !important;
     }
