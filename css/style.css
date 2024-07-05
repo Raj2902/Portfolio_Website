@@ -1,0 +1,523 @@
+/*CSS FOR MOBILE S*/
+.toggle-container {
+    display: flex;
+    align-items: center;
+    cursor: pointer; /* Indicate interactivity */
+  }
+  
+  .toggle-container label {
+    margin-right: 10px;
+  }
+  button span{
+    color: white;
+    margin-left: 10px;
+  }
+  .toggle-slider {
+    position: relative;
+    width: 50px;
+    height: 25px;
+    background: #ccc;
+    border-radius: 25px;
+    transition: background 0.2s ease; /* Smooth transition */
+  }
+  
+  .toggle-slider:before {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: white;
+    transition: transform 0.2s ease; /* Smooth transition */
+  }
+  
+  #toggle:checked + .toggle-slider {
+    background: #4CAF50; /* Change background color on toggle */
+  }
+  
+  #toggle:checked + .toggle-slider:before {
+    transform: translateX(25px); /* Move slider on toggle */
+  }
+  /*Started my css*/
+  *{
+    margin: 0;
+    font-family: system-ui, sans-serif;
+    color: white;
+  }
+  header{
+    padding: 15px 0px 15px 15px;
+    box-shadow: 0px 5px 5px rgba(7, 7, 7, 0.3);
+    background: orange;
+}
+  ul{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 15px;
+  }
+  li{
+    list-style: none;
+  }
+  .my-photo{
+    width: 100px;
+    padding: 10px;
+    border: 5px solid orange;
+    background: black;
+  }
+  .myPhoto {
+    width: -webkit-fill-available; /* Ensure compatibility */
+    animation-name: spin;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+  }
+  
+  @keyframes spin {
+    from {
+      transform: rotateY(0deg);
+    }
+    to {
+      transform: rotateY(360deg);
+    }
+  }
+  .logoAtTop{
+    display: flex;
+    align-items: center;
+  }
+  .logoAtTop img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    transition-duration: 0.5s;
+  }
+  .logoAtTop img:active{
+    transform: rotateZ(360deg);
+  }
+  p{
+    color: orange;
+  }
+  i{
+    color:black;
+  }
+.social-media-logos{
+    display: inline-grid;
+}
+.photoLogo{
+    margin: 10px 0px 0px 30px;
+    display: flex;
+}
+.side-by-side{
+    display: flex;
+}
+i{
+    font-size: xx-large;
+}
+.home,.skills,.projects{
+    margin: 30px 15px;
+}
+.projects-grid{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap:10px;
+}
+.cont-img{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+h2{
+    color: orange;
+    font-size: x-large;
+    text-transform: capitalize;
+}
+span{
+    color: purple;
+}
+.un{
+    text-decoration: underline;
+}
+h1{
+    color: white;
+    font-size: x-large;
+    margin-left: 15px;
+}
+button{
+    color: white;
+    width: 100px;
+    padding: 5px 0px;
+    border-radius: 24px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    border: none;
+    align-items: center;
+    background: #ffa500db;
+    border: none;
+    box-shadow: 4px 4px 4px sienna;
+}
+button:hover{
+    background: orange;
+    transform: scale(1.1);
+}
+.textBtn{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+.fa-download{
+    font-size: small;
+    color: white;
+}
+.fa-brands:hover{
+    transform: scale(1.5);
+}
+.about,.certificates,.contact{
+    background: orange;
+    padding: 30px 15px;
+    box-shadow: 0px 5px 5px rgba(7, 7, 7, 0.3);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.about h2, .certificates h2, .contact h2{
+    color: white;
+    font-size: xx-large;
+    padding-top: 0px;
+    text-decoration: underline;
+}
+.about-text{
+    color: white;
+}
+.btn2{
+    margin: 10px 0;
+    background: #800080cc;
+    width: 100px;
+}
+.btn2:hover{
+    background: purple;
+    transform: scale(1.1);
+}
+li a{
+    text-decoration: none;
+}
+.show-readMore{
+    display: none;
+}
+.skills h2{
+    color: orange;
+    font-size: xx-large;
+    padding-top: 0px;
+    text-decoration: underline;
+}
+canvas{
+    margin: 15px 0px;
+}
+.certificates-group {
+    display: inline-grid;
+    grid-template-columns: 1fr;
+    gap: 10px; /* Adjust spacing between images as needed */
+    margin-bottom: 30px;
+  }
+.card{
+    width: 290px;
+    height: 361px;
+    background: white;
+    border-radius: 24px;
+    margin:30px auto auto auto;
+}
+.cert-img{
+    background: white;
+    width: 100%;
+    height: 150px;
+    border-radius: 24px 24px 0px 0px;
+    box-shadow: 5px 10px 8px rgba(0, 0, 0, 0.3);
+    position: relative;
+}
+.cert-img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 24px 24px 0px 0px;
+}
+.cert-img a{
+    display: block;
+    color: blue;
+    text-decoration: underline;
+    text-align: center;
+    position: absolute;
+    bottom: 10px;
+    left: 0px;
+    right: 0px;
+}
+.cert-cont{
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.cert-cont p{
+    color: purple;
+}
+.card:hover{
+    box-shadow: 5px 10px 8px rgba(0, 0,0);
+}
+.projects h2{
+    font-size: xx-large;
+    padding-top: 0;
+}
+.projects .card{
+    background: purple;
+}
+.project-cont p{
+    color: white;
+}
+h3{
+    color: orange;
+}
+label{
+    display: none;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px 15px;
+}
+input,textarea{
+    box-sizing: border-box;
+    padding: 15px 0 15px 15px;
+    border-radius: 24px;
+    border: none;
+    width: 100%;
+    margin: 15px 0;
+    color: black;
+}
+fieldset{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: space-evenly;
+}
+.phone{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 0 15px;
+}
+.group-heading-img{
+    display: flex;
+    align-items: center;
+}
+footer{
+    background: black;
+}
+.call,.e-mail{
+    box-shadow: none;
+}
+.call-text a,.e-mail-text a{
+    font-size: medium;
+    margin-left: 10px;
+    text-decoration: none;
+    color: white;
+}
+.call-text a:hover,.e-mail-text a:hover{
+    color: purple;
+}
+.btn3{
+    background: purple;
+    padding: 0px;
+    width: min-content;
+    margin: 0;
+}
+.fa-regular{
+    font-size: xx-large;
+    color: white;
+    padding:10px;
+}
+.cont-btn{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px 20px;
+}
+.e-mail-text, .call-text{
+    display: flex;
+    align-items: center;
+}
+.copyright{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.copyright span{
+    font-size: smaller;
+    color: white;
+}
+#myChart-bar{
+    display: none !important;
+}
+.chart{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+@media screen and (min-width:768px) {
+    #myChart-pie{
+        display: none !important;
+    }
+    #myChart-bar{
+        display: block !important;
+    }
+    ul {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    li a{
+        font-size: medium;
+    }
+    .logoAtTop img {
+        width: 60px;
+        height: 60px;
+    }
+    h1{
+        font-size: xx-large;
+        margin-left: 30px;
+    }
+    /*home section css*/
+    .un{
+        font-size: xx-large;
+    }
+    .home p{
+        font-size: large;
+    }
+    button{
+        width: 150px;
+        padding: 20px 0px;
+    }
+    button span{
+        font-size: larger;
+    }
+    .fa-download {
+        font-size: x-large;
+    }
+    .my-photo{
+        width: 300px;
+    }
+    i{
+        font-size: xxx-large;
+    }
+    .home{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        line-height: 70px;
+    }
+    .textBtn{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .photoLogo{
+        margin: 10px 0px 0px 50px;
+    }
+    h2{
+        font-size: xxx-large;
+    }
+    /*about , skills, projects section css*/
+    .about h2, .certificates h2, .contact h2,.skills h2, .projects h2 {
+        font-size: xxx-large;
+    }
+    .about,.skills,.certificates,.projects{
+        display: flex;
+        flex-direction: column;
+        padding: 30px 60px;
+        gap: 40px;
+    }
+    .btn2{
+        align-self: center;
+        width: 150px;
+    }
+    /*contact css*/
+    .phone{
+        width: 60px;
+        height: 60px;
+    }
+    .cont-img{
+    flex-direction: row;
+    justify-content: space-evenly;
+    }
+    legend{
+        font-size: x-large;
+        color: purple;
+        font-weight: 800;
+    }
+}
+@media screen and (min-width:1024px) {
+    .certificates-group{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .projects-grid{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    ul {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    li a{
+        font-size: larger;
+    }
+    .logoAtTop img {
+        width: 70px;
+        height: 70px;
+    }
+    h1{
+        font-size: xxx-large;
+        margin-left: 30px;
+    }
+    h2{
+        font-size: xxx-large;
+    }
+    /*home section css*/
+    .un{
+        font-size: xxx-large;
+    }
+    .home p{
+        font-size: x-large;
+    }
+    button{
+        width: 150px;
+        padding: 20px 0px;
+    }
+    button span{
+        font-size: larger;
+    }
+    .fa-download {
+        font-size: x-large;
+    }
+    .my-photo{
+        width: 300px;
+    }
+    i{
+        font-size: xxx-large;
+    }
+    .home{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        line-height: 70px;
+    }
+    .textBtn{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .photoLogo{
+        margin: 10px 0px 0px 50px;
+    }
+    /*contact css*/
+    .phone{
+        width: 70px;
+        height: 70px;
+    }
+}
