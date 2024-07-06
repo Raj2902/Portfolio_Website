@@ -1,4 +1,10 @@
 /*CSS FOR MOBILE S*/
+#navigation ul li a{
+    color: rgba(255, 255, 255, 0.816);
+}
+#navigation ul li a:hover{
+    color: white;
+}
 #navigation{
     display: none;
 }
@@ -24,14 +30,16 @@
     transition: background 0.2s ease; /* Smooth transition */
   }
   
-  .toggle-slider:before {
-    content: "";
+  span button {
     position: absolute;
-    width: 20px;
-    height: 20px;
+    width: 0;
+    padding: 9px;
     border-radius: 50%;
+    margin-top: 0px;
     background-color: white;
-    transition: transform 0.2s ease; /* Smooth transition */
+    transition: transform 0.2s ease;
+    right: 0;
+    left: 0;
   }
   
   #toggle:checked + .toggle-slider {
@@ -91,6 +99,7 @@
     height: 50px;
     border-radius: 50%;
     transition-duration: 0.5s;
+    cursor: pointer;
   }
   .logoAtTop img:active{
     transform: rotateZ(360deg);

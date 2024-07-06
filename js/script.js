@@ -1,3 +1,4 @@
+//Hiding or shwoing navbar
 function showHideNav() {
   var nav = document.getElementById("logo");
   var displayNav = document.getElementById("navigation");
@@ -9,6 +10,8 @@ function showHideNav() {
     nav.setAttribute("data-nav", "show");
   }
 }
+
+//Add functionality to read more button
 function readMore() {
   let show = document.getElementById("show-readMore");
   let toggleData = document.getElementById("btn2");
@@ -22,6 +25,7 @@ function readMore() {
     }
   }
 }
+
 /*bar graph*/
 var xValues = ["Html", "Css", "JS", "MongoDB", "Express", "React", "Nodejs"];
 var yValues = [80, 70, 80, 50, 20, 60, 65];
@@ -67,9 +71,23 @@ new Chart("myChart-bar", {
     },
   },
 });
+
+//what should happen on form submit
 function formSubmit() {
   event.preventDefault();
   alert(
     "Mail sent, Note: This is just a dummy text actual functionality yet to be implemented"
   );
+}
+/*Toggle Day & Night*/
+function toggleDayNight() {
+  let td = document.getElementById("toggle-data");
+  let data = td.getAttribute("data-toggle");
+  if (data === "day") {
+    td.setAttribute("data-toggle", "night");
+    td.style.left = "auto";
+  } else {
+    td.setAttribute("data-toggle", "day");
+    td.style.left = 0;
+  }
 }

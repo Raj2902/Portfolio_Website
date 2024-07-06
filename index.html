@@ -3,12 +3,28 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--The person who created this page.-->
+    <meta name="author" content="Raj Agarwal" />
+    <!--The a brief description of the page.-->
+    <meta
+      description="This is the Landing page of this Portfolio website. This Portfolio website consists of skills, projects and certification 
+      courses by me. (Raj Agarwal)"
+    />
+    <!--The keywords of the page that would help this page to rank in SEO.-->
+    <meta
+      name="keywords"
+      content="web developer , self-taught web developer, web development skills, portfolio, Raj Agarwal"
+    />
+    <!--Logo in the title-->
     <link rel="icon" type="image/x-icon" href="./img/logo.png" />
+    <!--custom css-->
     <link rel="stylesheet" href="./css/style.css" />
+    <!--font awesome-->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
     />
+    <!--google fonts-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
     <title>Raj Agarwal - Portfolio Website</title>
   </head>
@@ -24,6 +40,7 @@
         />
         <h1><span>Profile</span> Website</h1>
       </div>
+      <!--Navigation for navigating through the page-->
       <nav id="navigation">
         <ul>
           <li><a href="#home">Home</a></li>
@@ -33,13 +50,21 @@
           <li><a href="#contact">Contact</a></li>
           <li><a href="services">Services</a></li>
           <li>
+            <!--Providing button for changing from day to night and vice versa-->
             <div class="toggle-container">
-              <span class="toggle-slider"></span>
+              <span class="toggle-slider"
+                ><button
+                  data-toggle="day"
+                  onclick="toggleDayNight()"
+                  id="toggle-data"
+                ></button
+              ></span>
             </div>
           </li>
         </ul>
       </nav>
     </header>
+    <!--Home Section-->
     <section class="home">
       <h2 class="un">Hi <span>there</span>,</h2>
       <p>
@@ -53,6 +78,7 @@
             <i class="fa fa-download" aria-hidden="true"></i><span>Resume</span>
           </button>
         </div>
+        <!--Social media logos-->
         <div class="photoLogo">
           <div class="social-media-logos">
             <i class="fa-brands fa-square-github"></i>
@@ -60,12 +86,14 @@
             <i class="fa-brands fa-square-instagram"></i>
             <i class="fa-brands fa-square-facebook"></i>
           </div>
+          <!--my own photo-->
           <div class="my-photo">
             <img class="myPhoto" src="./img/DSC_3159.JPG" alt="my-photo" />
           </div>
         </div>
       </div>
     </section>
+    <!--About section of the page-->
     <section class="about">
       <h2>About <span>me</span></h2>
       <p class="about-text">
@@ -76,6 +104,7 @@
         to stay up-to-date with the latest web development trends and
         technologies.
       </p>
+      <!--Hiding and unhiding the extra content to or hide it on click-->
       <button data="hide" id="btn2" class="btn2" onclick="readMore()">
         Read More
       </button>
@@ -102,20 +131,26 @@
         </p>
       </div>
     </section>
+    <!--skill section-->
     <section class="skills">
       <h2>My <span>Skills</span></h2>
+      <!--Used graphs to show percentage of knowledge I have in each skill-->
       <div class="chart">
         <canvas id="myChart-pie" style="width: 100%; max-width: 600px"></canvas>
         <canvas id="myChart-bar" style="width: 100%; max-width: 600px"></canvas>
       </div>
     </section>
+    <!--certificate section-->
     <section class="certificates">
       <h2>Certificates <span>Acquired</span></h2>
       <div class="certificates-group">
         <div class="card">
           <div class="cert-img">
             <img class="cert" src="./img/closing-tag.png" alt="html-cert" />
-            <a href="./img/html certificate.png">View HTML/CSS Certificate</a>
+            <!--specifying image path in src would open the certificate on a new page-->
+            <a href="./img/html certificate.png" target="_blank"
+              >View HTML/CSS Certificate</a
+            >
           </div>
           <div class="cert-cont">
             <h3>Html</h3>
@@ -127,10 +162,11 @@
             </p>
           </div>
         </div>
+        <!--making of the cards-->
         <div class="card">
           <div class="cert-img">
             <img class="cert" src="./img/git-logo.jpg" alt="html-cert" />
-            <a href="./img/git_GreatLearning certificate.png"
+            <a href="./img/git_GreatLearning certificate.png" target="_blank"
               >View GIT Certificate</a
             >
           </div>
@@ -147,7 +183,7 @@
         <div class="card">
           <div class="cert-img">
             <img class="cert" src="./img/js.webp" alt="html-cert" />
-            <a href="./img/javascript DSA certificate.png"
+            <a href="./img/javascript DSA certificate.png" target="_blank"
               >View JS Certificate</a
             >
           </div>
@@ -163,116 +199,132 @@
         </div>
       </div>
     </section>
+    <!--project section-->
     <section class="projects">
       <h2>Projects <span>At Glance</span></h2>
       <div class="projects-grid">
         <div class="card">
           <div class="cert-img">
-            <img class="cert" src="./img/js.webp" alt="html-cert" />
-            <a href="./img/javascript DSA certificate.png">View Project</a>
+            <img class="cert" src="./img/todo.png" alt="html-cert" />
+            <a href="https://todo-app-frontend-kappa.vercel.app" target="_blank"
+              >View Project</a
+            >
           </div>
           <div class="cert-cont project-cont">
             <h3>Todo App</h3>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
-              atque iure saepe, soluta quam minus itaque architecto eos delectus
-              quibusdam ipsum explicabo sit dolores vel unde? Provident eaque
-              corporis minus!
+              A TodoApp is a web application or mobile app designed to help
+              users manage their tasks and stay organized. Core functionalities
+              are <b>Data Storage</b>, <b>User Interface</b>,
+              <b>User Interaction</b>
             </p>
           </div>
         </div>
         <div class="card">
           <div class="cert-img">
-            <img class="cert" src="./img/js.webp" alt="html-cert" />
-            <a href="./img/javascript DSA certificate.png">View Project</a>
+            <img class="cert" src="./img/todo.png" alt="html-cert" />
+            <a href="https://todo-app-frontend-kappa.vercel.app" target="_blank"
+              >View Project</a
+            >
           </div>
           <div class="cert-cont project-cont">
             <h3>Todo App</h3>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
-              atque iure saepe, soluta quam minus itaque architecto eos delectus
-              quibusdam ipsum explicabo sit dolores vel unde? Provident eaque
-              corporis minus!
+              A TodoApp is a web application or mobile app designed to help
+              users manage their tasks and stay organized. Core functionalities
+              are <b>Data Storage</b>, <b>User Interface</b>,
+              <b>User Interaction</b>
             </p>
           </div>
         </div>
         <div class="card">
           <div class="cert-img">
-            <img class="cert" src="./img/js.webp" alt="html-cert" />
-            <a href="./img/javascript DSA certificate.png">View Project</a>
+            <img class="cert" src="./img/todo.png" alt="html-cert" />
+            <a href="https://todo-app-frontend-kappa.vercel.app" target="_blank"
+              >View Project</a
+            >
           </div>
           <div class="cert-cont project-cont">
             <h3>Todo App</h3>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
-              atque iure saepe, soluta quam minus itaque architecto eos delectus
-              quibusdam ipsum explicabo sit dolores vel unde? Provident eaque
-              corporis minus!
+              A TodoApp is a web application or mobile app designed to help
+              users manage their tasks and stay organized. Core functionalities
+              are <b>Data Storage</b>, <b>User Interface</b>,
+              <b>User Interaction</b>
             </p>
           </div>
         </div>
         <div class="card">
           <div class="cert-img">
-            <img class="cert" src="./img/js.webp" alt="html-cert" />
-            <a href="./img/javascript DSA certificate.png">View Project</a>
+            <img class="cert" src="./img/todo.png" alt="html-cert" />
+            <a href="https://todo-app-frontend-kappa.vercel.app" target="_blank"
+              >View Project</a
+            >
           </div>
           <div class="cert-cont project-cont">
             <h3>Todo App</h3>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
-              atque iure saepe, soluta quam minus itaque architecto eos delectus
-              quibusdam ipsum explicabo sit dolores vel unde? Provident eaque
-              corporis minus!
+              A TodoApp is a web application or mobile app designed to help
+              users manage their tasks and stay organized. Core functionalities
+              are <b>Data Storage</b>, <b>User Interface</b>,
+              <b>User Interaction</b>
             </p>
           </div>
         </div>
         <div class="card">
           <div class="cert-img">
-            <img class="cert" src="./img/js.webp" alt="html-cert" />
-            <a href="./img/javascript DSA certificate.png">View Project</a>
+            <img class="cert" src="./img/todo.png" alt="html-cert" />
+            <a href="https://todo-app-frontend-kappa.vercel.app" target="_blank"
+              >View Project</a
+            >
           </div>
           <div class="cert-cont project-cont">
             <h3>Todo App</h3>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
-              atque iure saepe, soluta quam minus itaque architecto eos delectus
-              quibusdam ipsum explicabo sit dolores vel unde? Provident eaque
-              corporis minus!
+              A TodoApp is a web application or mobile app designed to help
+              users manage their tasks and stay organized. Core functionalities
+              are <b>Data Storage</b>, <b>User Interface</b>,
+              <b>User Interaction</b>
             </p>
           </div>
         </div>
         <div class="card">
           <div class="cert-img">
-            <img class="cert" src="./img/js.webp" alt="html-cert" />
-            <a href="./img/javascript DSA certificate.png">View Project</a>
+            <img class="cert" src="./img/todo.png" alt="html-cert" />
+            <a href="https://todo-app-frontend-kappa.vercel.app" target="_blank"
+              >View Project</a
+            >
           </div>
           <div class="cert-cont project-cont">
             <h3>Todo App</h3>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
-              atque iure saepe, soluta quam minus itaque architecto eos delectus
-              quibusdam ipsum explicabo sit dolores vel unde? Provident eaque
-              corporis minus!
+              A TodoApp is a web application or mobile app designed to help
+              users manage their tasks and stay organized. Core functionalities
+              are <b>Data Storage</b>, <b>User Interface</b>,
+              <b>User Interaction</b>
             </p>
           </div>
         </div>
         <div class="card">
           <div class="cert-img">
-            <img class="cert" src="./img/js.webp" alt="html-cert" />
-            <a href="./img/javascript DSA certificate.png">View Project</a>
+            <img class="cert" src="./img/todo.png" alt="html-cert" />
+            <a href="https://todo-app-frontend-kappa.vercel.app" target="_blank"
+              >View Project</a
+            >
           </div>
           <div class="cert-cont project-cont">
             <h3>Todo</h3>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
-              atque iure saepe, soluta quam minus itaque architecto eos delectus
-              quibusdam ipsum explicabo sit dolores vel unde? Provident eaque
-              corporis minus!
+              A TodoApp is a web application or mobile app designed to help
+              users manage their tasks and stay organized. Core functionalities
+              are <b>Data Storage</b>, <b>User Interface</b>,
+              <b>User Interaction</b>
             </p>
           </div>
         </div>
       </div>
     </section>
+    <!--Contact Section-->
     <section class="contact">
       <div class="group-heading-img">
         <img src="./img/contact.jfif" alt="contact-img" class="phone" />
