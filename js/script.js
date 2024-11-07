@@ -18,10 +18,12 @@ function readMore() {
   if (toggleData.getAttribute("data") === "show") {
     show.style.display = "none";
     toggleData.setAttribute("data", "hide");
+    toggleData.textContent = "Read More";
   } else {
     {
       show.style.display = "block";
       toggleData.setAttribute("data", "show");
+      toggleData.textContent = "Read Less";
     }
   }
 }

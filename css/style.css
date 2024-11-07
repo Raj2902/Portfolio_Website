@@ -5,13 +5,18 @@
 #navigation ul li a:hover{
     color: white;
 }
-#navigation{
-    display: none;
+span a{
+    text-decoration: none;
+}
+#resume{
+    text-decoration: none;
+}
+button{
+    cursor: pointer;
 }
 .toggle-container {
     display: flex;
     align-items: center;
-    cursor: pointer; /* Indicate interactivity */
   }
   
   .toggle-container label {
@@ -21,6 +26,9 @@
     color: white;
     margin-left: 10px;
   }
+#toggle-data{
+    cursor: pointer; /* Indicate interactivity */
+}
   .toggle-slider {
     position: relative;
     width: 50px;

@@ -28,7 +28,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
     <title>Raj Agarwal - Portfolio Website</title>
   </head>
-  <body>
+  <body id="home">
     <header>
       <div class="logoAtTop">
         <img
@@ -36,7 +36,7 @@
           onclick="showHideNav()"
           src="./img/logo.png"
           alt="logo"
-          data-nav="hide"
+          data-nav="show"
         />
         <h1><span>Profile</span> Website</h1>
       </div>
@@ -48,7 +48,7 @@
           <li><a href="#skills">Skills</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
-          <li><a href="services">Services</a></li>
+          <li><a href="#services">Services</a></li>
           <li>
             <!--Providing button for changing from day to night and vice versa-->
             <div class="toggle-container">
@@ -74,17 +74,34 @@
       <div class="side-by-side">
         <div class="textBtn">
           <h2>Let's <span>get</span> connect <span>together</span></h2>
-          <button>
-            <i class="fa fa-download" aria-hidden="true"></i><span>Resume</span>
-          </button>
+          <a id="resume" href="./img/Raj_Agarwal_Resume.pdf" download
+            ><button>
+              <i class="fa fa-download" aria-hidden="true"></i
+              ><span>Resume</span>
+            </button></a
+          >
         </div>
         <!--Social media logos-->
         <div class="photoLogo">
           <div class="social-media-logos">
-            <i class="fa-brands fa-square-github"></i>
-            <i class="fa-brands fa-linkedin"></i>
-            <i class="fa-brands fa-square-instagram"></i>
-            <i class="fa-brands fa-square-facebook"></i>
+            <a target="_blank" href="https://github.com/Raj2902"
+              ><i class="fa-brands fa-square-github"></i
+            ></a>
+            <a
+              target="_blank"
+              href="https://www.linkedin.com/in/raj-agarwal-584336222/"
+              ><i class="fa-brands fa-linkedin"></i
+            ></a>
+            <a
+              target="_blank"
+              href="https://www.instagram.com/slingshot_the_rapper/profilecard/?igsh=MXZ0bWxuanBuY2hseQ=="
+              ><i class="fa-brands fa-square-instagram"></i
+            ></a>
+            <a
+              target="_blank"
+              href="https://www.facebook.com/share/vbdUA1ryJ2rgSEo1/"
+              ><i class="fa-brands fa-square-facebook"></i
+            ></a>
           </div>
           <!--my own photo-->
           <div class="my-photo">
@@ -94,7 +111,7 @@
       </div>
     </section>
     <!--About section of the page-->
-    <section class="about">
+    <section class="about" id="about">
       <h2>About <span>me</span></h2>
       <p class="about-text">
         I'm a passionate web developer with a strong foundation in the MERN
@@ -132,7 +149,7 @@
       </div>
     </section>
     <!--skill section-->
-    <section class="skills">
+    <section class="skills" id="skills">
       <h2>My <span>Skills</span></h2>
       <!--Used graphs to show percentage of knowledge I have in each skill-->
       <div class="chart">
@@ -200,23 +217,23 @@
       </div>
     </section>
     <!--project section-->
-    <section class="projects">
+    <section class="projects" id="projects">
       <h2>Projects <span>At Glance</span></h2>
       <div class="projects-grid">
         <div class="card">
           <div class="cert-img">
-            <img class="cert" src="./img/todo.png" alt="html-cert" />
-            <a href="https://todo-app-frontend-kappa.vercel.app" target="_blank"
+            <img class="cert" src="./img/blg_web.png" alt="html-cert" />
+            <a href="https://blgweb.vercel.app/" target="_blank"
               >View Project</a
             >
           </div>
           <div class="cert-cont project-cont">
-            <h3>Todo App</h3>
+            <h3>Blog Website</h3>
             <p>
-              A TodoApp is a web application or mobile app designed to help
-              users manage their tasks and stay organized. Core functionalities
-              are <b>Data Storage</b>, <b>User Interface</b>,
-              <b>User Interaction</b>
+              A blog website where I post my challenges in web development, you
+              will also get to see posts related to certain topics than can help
+              you solve your problem I have provided some code samples and
+              solutions as well.
             </p>
           </div>
         </div>
@@ -239,35 +256,39 @@
         </div>
         <div class="card">
           <div class="cert-img">
-            <img class="cert" src="./img/todo.png" alt="html-cert" />
-            <a href="https://todo-app-frontend-kappa.vercel.app" target="_blank"
+            <img class="cert" src="./img/std_reg.png" alt="html-cert" />
+            <a
+              href="https://student-registration-ten.vercel.app/"
+              target="_blank"
               >View Project</a
             >
           </div>
           <div class="cert-cont project-cont">
-            <h3>Todo App</h3>
+            <h3>Student Registration</h3>
             <p>
-              A TodoApp is a web application or mobile app designed to help
-              users manage their tasks and stay organized. Core functionalities
-              are <b>Data Storage</b>, <b>User Interface</b>,
-              <b>User Interaction</b>
+              A Student Registration app where you can view , edit, create and
+              delete student record based on student id used localstorage so
+              data dont get erased on page refresh note that data will be lost
+              on clearing localstorage.
             </p>
           </div>
         </div>
         <div class="card">
           <div class="cert-img">
-            <img class="cert" src="./img/todo.png" alt="html-cert" />
-            <a href="https://todo-app-frontend-kappa.vercel.app" target="_blank"
+            <img class="cert" src="./img/weather_app.png" alt="html-cert" />
+            <a
+              href="https://weather-app-rust-alpha-48.vercel.app/"
+              target="_blank"
               >View Project</a
             >
           </div>
           <div class="cert-cont project-cont">
-            <h3>Todo App</h3>
+            <h3>Weather App</h3>
             <p>
-              A TodoApp is a web application or mobile app designed to help
-              users manage their tasks and stay organized. Core functionalities
-              are <b>Data Storage</b>, <b>User Interface</b>,
-              <b>User Interaction</b>
+              Know the weather of your current city though city name, selection
+              on map, current location, get weather forecast for up to 5 days,
+              history gets stored of your currently searched cities, marker on
+              the map to point the city.
             </p>
           </div>
         </div>
@@ -325,7 +346,7 @@
       </div>
     </section>
     <!--Contact Section-->
-    <section class="contact">
+    <section class="contact" id="contact">
       <div class="group-heading-img">
         <img src="./img/contact.jfif" alt="contact-img" class="phone" />
         <h2>Contact <span>Me</span></h2>
@@ -364,7 +385,7 @@
         <button class="btn2" type="submit">Send Message</button>
       </form>
     </section>
-    <footer>
+    <footer id="services">
       <div class="cont-btn">
         <div class="cont-img">
           <div class="call-text">
