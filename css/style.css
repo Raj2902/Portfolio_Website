@@ -21,6 +21,9 @@ table {
     border-collapse: collapse;
     margin: 20px 0px;
 }
+.fa-eye{
+    font-size: medium !important;
+}
 th{
     color: purple;
 }
