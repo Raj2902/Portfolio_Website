@@ -93,3 +93,32 @@ function toggleDayNight() {
     td.style.left = 0;
   }
 }
+/*script for slider : change images after every 10s*/
+const arr_img = [
+  "./img/html certificate.png",
+  "./img/git_GreatLearning certificate.png",
+  "./img/javascript DSA certificate.png",
+  "./img/git_testdome certificate.png",
+  "./img/react_testdome certificate.png",
+];
+const slider_img = document.getElementById("certificate-image");
+const marker = document.getElementById("marker");
+for (let i = 0; i < arr_img.length; i++) {
+  let spanElement = document.createElement("span");
+  spanElement.id = `${i}m`;
+  marker.appendChild(spanElement);
+}
+let i = 0;
+document.getElementById(`${i}m`).style = "background-color:grey";
+setInterval(() => {
+  /*remove color of previous marker*/
+  document.getElementById(`${i}m`).style = "background-color:transparent";
+  i++;
+  if (i == arr_img.length) {
+    i = 0;
+  }
+  slider_img.src = arr_img[i];
+  /*add color to the next marker*/
+  document.getElementById(`${i}m`).style = "background-color:grey";
+  document.getElementById("view-cert").href = `${arr_img[i]}`;
+}, 10000);
